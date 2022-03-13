@@ -1,6 +1,7 @@
 package com.vishal.elastic.search.repository;
 
 import com.vishal.elastic.search.model.Product;
+import org.springframework.data.elasticsearch.annotations.Query;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import org.springframework.stereotype.Repository;
 
@@ -14,5 +15,8 @@ public interface ProductRepository extends ElasticsearchRepository<Product, Stri
     List<Product> findByNameContaining(String name);
 
     List<Product> findByManufacturerAndCategory(String manufacturer, String category);
+
+    @Query("{ \"match\": { \"name\": \"?0\"}}")
+    List<Product> findAllByNameUsingAnnotations(String name);
 
 }

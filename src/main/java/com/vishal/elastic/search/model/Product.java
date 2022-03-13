@@ -9,7 +9,7 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 
 import java.io.File;
 
-@Document(indexName = "productindex")
+@Document(indexName = "product")
 @Data
 @ToString
 public class Product {

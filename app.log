@@ -1,0 +1,518 @@
+2022-03-13 13:39:06.927 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:55] Starting Application using Java 11.0.11 on Vishals-MacBook-Pro.local with PID 2672 (/Users/vishal/IdeaProjects/elastic.search/build/classes/java/main started by vishal in /Users/vishal/IdeaProjects/elastic.search)
+2022-03-13 13:39:06.928 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:640] No active profile set, falling back to 1 default profile: "default"
+2022-03-13 13:39:08.125 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-13 13:39:08.126 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2022-03-13 13:39:08.126 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-13 13:39:08.202 [INFO] [restartedMain]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2022-03-13 13:39:09.141 [TRACE] [restartedMain]
+                [org.springframework.data.elasticsearch.client.WIRE:64] [1a2bdf29] Sending request GET / with parameters: 
+2022-03-13 13:39:09.185 [TRACE] [I/O dispatcher 1]
+                [org.springframework.data.elasticsearch.client.WIRE:97] [1a2bdf29] Received raw response: 200 OK
+2022-03-13 13:39:09.219 [TRACE] [restartedMain]
+                [org.springframework.data.elasticsearch.client.WIRE:64] [7ba05656] Sending request HEAD /product?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false with parameters: 
+2022-03-13 13:39:09.225 [TRACE] [I/O dispatcher 1]
+                [org.springframework.data.elasticsearch.client.WIRE:97] [7ba05656] Received raw response: 404 NOT_FOUND
+2022-03-13 13:39:09.368 [TRACE] [restartedMain]
+                [org.springframework.data.elasticsearch.client.WIRE:83] [7dab56c0] Sending request PUT /product?master_timeout=30s&timeout=30s with parameters: 
+Request body: {"settings":{"index":{"refresh_interval":"1s","store":{"type":"fs"},"number_of_shards":"1","number_of_replicas":"1"}},"mappings":{"properties":{"_class":{"type":"keyword","index":false,"doc_values":false},"name":{"type":"text"},"price":{"type":"double"},"quantity":{"type":"integer"},"category":{"type":"keyword"},"desc":{"type":"text"},"manufacturer":{"type":"keyword"}}},"aliases":{}}
+2022-03-13 13:39:09.689 [TRACE] [I/O dispatcher 1]
+                [org.springframework.data.elasticsearch.client.WIRE:97] [7dab56c0] Received raw response: 200 OK
+2022-03-13 13:39:09.746 [TRACE] [restartedMain]
+                [org.springframework.data.elasticsearch.client.WIRE:64] [16d5cd0f] Sending request DELETE /hello-world?master_timeout=30s&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=true&ignore_throttled=false&timeout=30s with parameters: 
+2022-03-13 13:39:09.752 [TRACE] [I/O dispatcher 1]
+                [org.springframework.data.elasticsearch.client.WIRE:97] [16d5cd0f] Received raw response: 404 NOT_FOUND
+2022-03-13 13:39:09.841 [ERROR] [restartedMain]
+                [com.vishal.elastic.search.config.ElasticSearchClientConfig:37] Error in deleting hello-world index
+2022-03-13 13:39:09.842 [TRACE] [restartedMain]
+                [org.springframework.data.elasticsearch.client.WIRE:83] [6c3e4442] Sending request PUT /hello-world?master_timeout=30s&timeout=30s with parameters: 
+Request body: {"settings":{"index":{"number_of_shards":"1","number_of_replicas":"0"}},"aliases":{}}
+2022-03-13 13:39:09.945 [TRACE] [I/O dispatcher 1]
+                [org.springframework.data.elasticsearch.client.WIRE:97] [6c3e4442] Received raw response: 200 OK
+2022-03-13 13:39:10.335 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-03-13 13:39:10.356 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:61] Started Application in 4.114 seconds (JVM running for 4.646)
+2022-03-13 13:40:15.971 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:55] Starting Application using Java 11.0.11 on Vishals-MacBook-Pro.local with PID 2700 (/Users/vishal/IdeaProjects/elastic.search/build/classes/java/main started by vishal in /Users/vishal/IdeaProjects/elastic.search)
+2022-03-13 13:40:15.974 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:640] No active profile set, falling back to 1 default profile: "default"
+2022-03-13 13:40:17.215 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-13 13:40:17.215 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2022-03-13 13:40:17.215 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-13 13:40:17.294 [INFO] [restartedMain]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2022-03-13 13:40:18.915 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-03-13 13:40:18.942 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:61] Started Application in 3.508 seconds (JVM running for 4.075)
+2022-03-13 14:54:53.743 [INFO] [Test worker]
+                [com.vishal.elastic.search.ApplicationTests:55] Starting ApplicationTests using Java 1.8.0_292 on Vishals-MacBook-Pro.local with PID 3193 (started by vishal in /Users/vishal/IdeaProjects/elastic.search)
+2022-03-13 14:54:53.748 [INFO] [Test worker]
+                [com.vishal.elastic.search.ApplicationTests:640] No active profile set, falling back to 1 default profile: "default"
+2022-03-13 14:54:56.097 [INFO] [Test worker]
+                [com.vishal.elastic.search.ApplicationTests:61] Started ApplicationTests in 2.836 seconds (JVM running for 3.947)
+2022-03-13 14:55:26.586 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:55] Starting Application using Java 11.0.11 on Vishals-MacBook-Pro.local with PID 3208 (/Users/vishal/IdeaProjects/elastic.search/build/classes/java/main started by vishal in /Users/vishal/IdeaProjects/elastic.search)
+2022-03-13 14:55:26.588 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:640] No active profile set, falling back to 1 default profile: "default"
+2022-03-13 14:55:27.551 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-13 14:55:27.552 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2022-03-13 14:55:27.552 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-13 14:55:27.608 [INFO] [restartedMain]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2022-03-13 14:55:28.826 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-03-13 14:55:28.847 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:61] Started Application in 2.699 seconds (JVM running for 3.21)
+2022-03-13 15:06:18.089 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:55] Starting Application using Java 11.0.11 on Vishals-MacBook-Pro.local with PID 3318 (/Users/vishal/IdeaProjects/elastic.search/build/classes/java/main started by vishal in /Users/vishal/IdeaProjects/elastic.search)
+2022-03-13 15:06:18.091 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:640] No active profile set, falling back to 1 default profile: "default"
+2022-03-13 15:06:19.385 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:06:19.386 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2022-03-13 15:06:19.386 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-13 15:06:19.463 [INFO] [restartedMain]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2022-03-13 15:06:21.070 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:06:21.091 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:61] Started Application in 3.615 seconds (JVM running for 4.321)
+2022-03-13 15:07:15.645 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:55] Starting Application using Java 11.0.11 on Vishals-MacBook-Pro.local with PID 3329 (/Users/vishal/IdeaProjects/elastic.search/build/classes/java/main started by vishal in /Users/vishal/IdeaProjects/elastic.search)
+2022-03-13 15:07:15.647 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:640] No active profile set, falling back to 1 default profile: "default"
+2022-03-13 15:07:15.696 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-13 15:07:15.697 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-13 15:07:16.136 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:07:16.148 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 5 ms. Found 0 Elasticsearch repository interfaces.
+2022-03-13 15:07:16.269 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:07:16.306 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 36 ms. Found 1 Elasticsearch repository interfaces.
+2022-03-13 15:07:16.313 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:07:16.316 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-03-13 15:07:16.865 [INFO] [restartedMain]
+                [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-03-13 15:07:16.882 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:07:16.882 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2022-03-13 15:07:16.883 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-13 15:07:16.956 [INFO] [restartedMain]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2022-03-13 15:07:16.957 [INFO] [restartedMain]
+                [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 1260 ms
+2022-03-13 15:07:17.742 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-03-13 15:07:18.474 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:07:18.488 [INFO] [restartedMain]
+                [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-13 15:07:18.497 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:61] Started Application in 3.381 seconds (JVM running for 4.024)
+2022-03-13 15:08:43.125 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:55] Starting Application using Java 11.0.11 on Vishals-MacBook-Pro.local with PID 3347 (/Users/vishal/IdeaProjects/elastic.search/build/classes/java/main started by vishal in /Users/vishal/IdeaProjects/elastic.search)
+2022-03-13 15:08:43.127 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:640] No active profile set, falling back to 1 default profile: "default"
+2022-03-13 15:08:43.181 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-13 15:08:43.182 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-13 15:08:43.653 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:08:43.663 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 5 ms. Found 0 Elasticsearch repository interfaces.
+2022-03-13 15:08:43.795 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:08:43.844 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 48 ms. Found 1 Elasticsearch repository interfaces.
+2022-03-13 15:08:43.855 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:08:43.860 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 3 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-03-13 15:08:44.443 [INFO] [restartedMain]
+                [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-03-13 15:08:44.455 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:08:44.456 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2022-03-13 15:08:44.456 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-13 15:08:44.535 [INFO] [restartedMain]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2022-03-13 15:08:44.536 [INFO] [restartedMain]
+                [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 1353 ms
+2022-03-13 15:08:45.397 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-03-13 15:08:46.154 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:08:46.167 [INFO] [restartedMain]
+                [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-13 15:08:46.176 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:61] Started Application in 3.661 seconds (JVM running for 4.368)
+2022-03-13 15:08:56.250 [INFO] [http-nio-8080-exec-2]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-13 15:08:56.251 [INFO] [http-nio-8080-exec-2]
+                [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2022-03-13 15:08:56.252 [INFO] [http-nio-8080-exec-2]
+                [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2022-03-13 15:08:56.269 [WARN] [http-nio-8080-exec-2]
+                [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:208] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-03-13 15:12:46.120 [ERROR] [http-nio-8080-exec-9]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Ambiguous handler methods mapped for '/products/FunkyBuys%C2%AE': {public org.springframework.http.ResponseEntity com.vishal.elastic.search.ProductController.getProductByName(java.lang.String), public org.springframework.http.ResponseEntity com.vishal.elastic.search.ProductController.getProductById(java.lang.String)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/products/FunkyBuys%C2%AE': {public org.springframework.http.ResponseEntity com.vishal.elastic.search.ProductController.getProductByName(java.lang.String), public org.springframework.http.ResponseEntity com.vishal.elastic.search.ProductController.getProductById(java.lang.String)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:432)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1261)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1043)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-03-13 15:12:57.507 [ERROR] [http-nio-8080-exec-1]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Ambiguous handler methods mapped for '/products/FunkyBuys': {public org.springframework.http.ResponseEntity com.vishal.elastic.search.ProductController.getProductByName(java.lang.String), public org.springframework.http.ResponseEntity com.vishal.elastic.search.ProductController.getProductById(java.lang.String)}] with root cause
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/products/FunkyBuys': {public org.springframework.http.ResponseEntity com.vishal.elastic.search.ProductController.getProductByName(java.lang.String), public org.springframework.http.ResponseEntity com.vishal.elastic.search.ProductController.getProductById(java.lang.String)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:432)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1261)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1043)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-03-13 15:15:44.755 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:55] Starting Application using Java 11.0.11 on Vishals-MacBook-Pro.local with PID 3381 (/Users/vishal/IdeaProjects/elastic.search/build/classes/java/main started by vishal in /Users/vishal/IdeaProjects/elastic.search)
+2022-03-13 15:15:44.757 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:640] No active profile set, falling back to 1 default profile: "default"
+2022-03-13 15:15:44.808 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-13 15:15:44.809 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-13 15:15:45.217 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:15:45.226 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 4 ms. Found 0 Elasticsearch repository interfaces.
+2022-03-13 15:15:45.349 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:15:45.387 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 37 ms. Found 1 Elasticsearch repository interfaces.
+2022-03-13 15:15:45.394 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:15:45.397 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-03-13 15:15:45.959 [INFO] [restartedMain]
+                [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-03-13 15:15:45.971 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:15:45.972 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2022-03-13 15:15:45.972 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-13 15:15:46.047 [INFO] [restartedMain]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2022-03-13 15:15:46.047 [INFO] [restartedMain]
+                [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 1238 ms
+2022-03-13 15:15:46.902 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-03-13 15:15:47.662 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:15:47.675 [INFO] [restartedMain]
+                [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-13 15:15:47.683 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:61] Started Application in 3.446 seconds (JVM running for 4.107)
+2022-03-13 15:16:18.530 [INFO] [http-nio-8080-exec-2]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-13 15:16:18.531 [INFO] [http-nio-8080-exec-2]
+                [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2022-03-13 15:16:18.533 [INFO] [http-nio-8080-exec-2]
+                [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 2 ms
+2022-03-13 15:16:18.658 [INFO] [http-nio-8080-exec-2]
+                [com.vishal.elastic.search.ProductController:58] No product for this id: FunkyBuys
+2022-03-13 15:16:37.402 [WARN] [http-nio-8080-exec-3]
+                [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:208] Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2022-03-13 15:17:06.824 [WARN] [http-nio-8080-exec-4]
+                [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:208] Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2022-03-13 15:18:42.235 [WARN] [http-nio-8080-exec-5]
+                [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:208] Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: Could not find acceptable representation]
+2022-03-13 15:19:37.925 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:55] Starting Application using Java 11.0.11 on Vishals-MacBook-Pro.local with PID 3402 (/Users/vishal/IdeaProjects/elastic.search/build/classes/java/main started by vishal in /Users/vishal/IdeaProjects/elastic.search)
+2022-03-13 15:19:37.927 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:640] No active profile set, falling back to 1 default profile: "default"
+2022-03-13 15:19:37.981 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-13 15:19:37.982 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-13 15:19:38.404 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:19:38.412 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 4 ms. Found 0 Elasticsearch repository interfaces.
+2022-03-13 15:19:38.533 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:19:38.567 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 32 ms. Found 1 Elasticsearch repository interfaces.
+2022-03-13 15:19:38.572 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:19:38.575 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-03-13 15:19:39.130 [INFO] [restartedMain]
+                [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-03-13 15:19:39.145 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:19:39.146 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2022-03-13 15:19:39.146 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-13 15:19:39.222 [INFO] [restartedMain]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2022-03-13 15:19:39.223 [INFO] [restartedMain]
+                [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 1240 ms
+2022-03-13 15:19:40.061 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-03-13 15:19:40.845 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:19:40.861 [INFO] [restartedMain]
+                [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-13 15:19:40.869 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:61] Started Application in 3.473 seconds (JVM running for 4.086)
+2022-03-13 15:19:45.859 [INFO] [http-nio-8080-exec-1]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-13 15:19:45.860 [INFO] [http-nio-8080-exec-1]
+                [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2022-03-13 15:19:45.862 [INFO] [http-nio-8080-exec-1]
+                [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2022-03-13 15:21:28.811 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:55] Starting Application using Java 11.0.11 on Vishals-MacBook-Pro.local with PID 3418 (/Users/vishal/IdeaProjects/elastic.search/build/classes/java/main started by vishal in /Users/vishal/IdeaProjects/elastic.search)
+2022-03-13 15:21:28.813 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:640] No active profile set, falling back to 1 default profile: "default"
+2022-03-13 15:21:28.868 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-13 15:21:28.868 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-13 15:21:29.290 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:21:29.299 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 4 ms. Found 0 Elasticsearch repository interfaces.
+2022-03-13 15:21:29.421 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:21:29.455 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 33 ms. Found 1 Elasticsearch repository interfaces.
+2022-03-13 15:21:29.462 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:21:29.465 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-03-13 15:21:30.025 [INFO] [restartedMain]
+                [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-03-13 15:21:30.037 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:21:30.038 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2022-03-13 15:21:30.038 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-13 15:21:30.106 [INFO] [restartedMain]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2022-03-13 15:21:30.107 [INFO] [restartedMain]
+                [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 1238 ms
+2022-03-13 15:21:30.959 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-03-13 15:21:31.689 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:21:31.704 [INFO] [restartedMain]
+                [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-13 15:21:31.713 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:61] Started Application in 3.418 seconds (JVM running for 4.05)
+2022-03-13 15:21:35.206 [INFO] [http-nio-8080-exec-2]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-13 15:21:35.207 [INFO] [http-nio-8080-exec-2]
+                [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2022-03-13 15:21:35.209 [INFO] [http-nio-8080-exec-2]
+                [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2022-03-13 15:22:41.005 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:55] Starting Application using Java 11.0.11 on Vishals-MacBook-Pro.local with PID 3434 (/Users/vishal/IdeaProjects/elastic.search/build/classes/java/main started by vishal in /Users/vishal/IdeaProjects/elastic.search)
+2022-03-13 15:22:41.007 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:640] No active profile set, falling back to 1 default profile: "default"
+2022-03-13 15:22:41.054 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-13 15:22:41.054 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-13 15:22:41.471 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:22:41.480 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 5 ms. Found 0 Elasticsearch repository interfaces.
+2022-03-13 15:22:41.606 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:22:41.644 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 36 ms. Found 1 Elasticsearch repository interfaces.
+2022-03-13 15:22:41.651 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:22:41.653 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-03-13 15:22:42.232 [INFO] [restartedMain]
+                [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-03-13 15:22:42.244 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:22:42.244 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2022-03-13 15:22:42.245 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-13 15:22:42.320 [INFO] [restartedMain]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2022-03-13 15:22:42.321 [INFO] [restartedMain]
+                [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 1266 ms
+2022-03-13 15:22:43.319 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-03-13 15:22:44.236 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:22:44.250 [INFO] [restartedMain]
+                [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-13 15:22:44.258 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:61] Started Application in 3.803 seconds (JVM running for 4.487)
+2022-03-13 15:22:48.704 [INFO] [http-nio-8080-exec-2]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-13 15:22:48.705 [INFO] [http-nio-8080-exec-2]
+                [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2022-03-13 15:22:48.707 [INFO] [http-nio-8080-exec-2]
+                [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 1 ms
+2022-03-13 15:23:36.975 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:55] Starting Application using Java 11.0.11 on Vishals-MacBook-Pro.local with PID 3449 (/Users/vishal/IdeaProjects/elastic.search/build/classes/java/main started by vishal in /Users/vishal/IdeaProjects/elastic.search)
+2022-03-13 15:23:36.977 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:640] No active profile set, falling back to 1 default profile: "default"
+2022-03-13 15:23:37.028 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-13 15:23:37.029 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-13 15:23:37.452 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:23:37.463 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 6 ms. Found 0 Elasticsearch repository interfaces.
+2022-03-13 15:23:37.587 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:23:37.631 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 42 ms. Found 1 Elasticsearch repository interfaces.
+2022-03-13 15:23:37.638 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-03-13 15:23:37.640 [INFO] [restartedMain]
+                [org.springframework.data.repository.config.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-03-13 15:23:38.202 [INFO] [restartedMain]
+                [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-03-13 15:23:38.218 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:23:38.218 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardService:173] Starting service [Tomcat]
+2022-03-13 15:23:38.219 [INFO] [restartedMain]
+                [org.apache.catalina.core.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-13 15:23:38.294 [INFO] [restartedMain]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring embedded WebApplicationContext
+2022-03-13 15:23:38.294 [INFO] [restartedMain]
+                [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 1265 ms
+2022-03-13 15:23:39.065 [INFO] [restartedMain]
+                [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-03-13 15:23:39.770 [INFO] [restartedMain]
+                [org.apache.coyote.http11.Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+2022-03-13 15:23:39.784 [INFO] [restartedMain]
+                [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-13 15:23:39.793 [INFO] [restartedMain]
+                [com.vishal.elastic.search.Application:61] Started Application in 3.36 seconds (JVM running for 4.062)
+2022-03-13 15:23:42.629 [INFO] [http-nio-8080-exec-2]
+                [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-13 15:23:42.631 [INFO] [http-nio-8080-exec-2]
+                [org.springframework.web.servlet.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2022-03-13 15:23:42.636 [INFO] [http-nio-8080-exec-2]
+                [org.springframework.web.servlet.DispatcherServlet:547] Completed initialization in 5 ms

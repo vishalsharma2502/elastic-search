@@ -32,9 +32,9 @@
         </encoder>
     </appender>
 
-    <logger name="org.springframework" level="ERROR" />
-    <logger name="com.vishal" level="INFO" />
-    <logger name="org.springframework.data.elasticsearch.client.WIRE" level="trace"/>
+    <logger name="org.springframework" level="info" />
+    <logger name="com.vishal" level="info" />
+    <logger name="org.springframework.data.elasticsearch.client.WIRE" level="info"/>
 
     <root level="info">
         <appender-ref ref="STDOUT" />
