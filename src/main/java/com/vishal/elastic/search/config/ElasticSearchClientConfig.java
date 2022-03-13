@@ -1,4 +1,4 @@
-package com.vishal.elastic.search;
+package com.vishal.elastic.search.config;
 
 import org.elasticsearch.client.RestHighLevelClient;
 import org.springframework.beans.factory.annotation.Configurable;
